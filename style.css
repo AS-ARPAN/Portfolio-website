@@ -363,12 +363,6 @@ body:not(.home-page) .hero {
   gap: 20px;
 }
 
-/* On smaller screens when hamburger toggled */
-
-
-
-/* Hide nav-links by default on small screens */
-/* Override for mobile nav-links */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
