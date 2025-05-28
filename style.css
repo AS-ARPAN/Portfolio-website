@@ -368,15 +368,17 @@ body:not(.home-page) .hero {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%; /* appear right below header */
+    top: 100%; /* aligns right below header */
     left: 0;
     right: 0;
     width: 100%;
     background-color: rgba(30, 30, 30, 0.95);
     border-radius: 0 0 8px 8px;
-    padding: 0.5rem 0;
+    padding: 0; /* ✅ remove extra space */
+    margin: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    overflow: hidden; /* ✅ prevent extra space issues */
   }
 
   .nav-links.show {
@@ -384,7 +386,7 @@ body:not(.home-page) .hero {
   }
 
   .nav-links li {
-    margin: 0.5rem 0;
+    margin: 0.3rem 0; /* small gap between links */
     text-align: center;
   }
 
