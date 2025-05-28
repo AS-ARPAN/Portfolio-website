@@ -364,24 +364,8 @@ body:not(.home-page) .hero {
 }
 
 /* On smaller screens when hamburger toggled */
-.nav-links.show {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  position: fixed; /* Make menu overlay */
-  top: 60px; /* Adjust based on your header height */
-  left: 0;
-  right: 0;
-  background-color: #222; /* Or your background */
-  height: calc(100vh - 60px);
-  z-index: 1000;
-}
 
-/* Center the links inside the nav-links when shown */
-.nav-links.show li {
-  margin: 20px 0;
-}
+
 
 /* Hide nav-links by default on small screens */
 /* Override for mobile nav-links */
