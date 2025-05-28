@@ -384,14 +384,42 @@ body:not(.home-page) .hero {
 }
 
 /* Hide nav-links by default on small screens */
+/* Override for mobile nav-links */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 100%; /* appear right below header */
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.95);
+    border-radius: 0 0 8px 8px;
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
   }
-  
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
   .hamburger {
     display: block;
+    font-size: 1.5rem;
     cursor: pointer;
+    color: #f0f0f0;
+  }
+
+  header {
+    position: relative;
   }
 }
+
+
