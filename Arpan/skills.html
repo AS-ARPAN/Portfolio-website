@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Arpan Panda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <header>
+    <div class="logo">My Portfolio</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card fade-up">
+        <h3>C Programming</h3>
+        <p>Strong understanding of logic building, loops, and functions using C.</p>
+      </div>
+
+      <div class="skill-card fade-up">
+        <h3>HTML</h3>
+        <p>Skilled in structuring clean, semantic web pages using HTML5.</p>
+      </div>
+
+      <div class="skill-card fade-up">
+        <h3>CSS</h3>
+        <p>Experienced in styling and creating responsive designs with CSS.</p>
+      </div>
+
+      <div class="skill-card fade-up">
+        <h3>GitHub</h3>
+        <p>Comfortable with version control and publishing projects using Git & GitHub.</p>
+      </div>
+
+    </div>
+  </section>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>

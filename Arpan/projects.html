@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Arpan Panda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">My Portfolio</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects-section">
+    <h2>My Projects</h2>
+    <div class="project-cards">
+
+      <div class="project-card fade-up">
+        <h3>Portfolio Website</h3>
+        <p>
+          This is a responsive personal portfolio website built using HTML and CSS. It includes sections like Home, About, Projects, and Skills with a clean layout and mobile-friendly navigation.
+        </p>
+        <p><strong>Tech Used:</strong> HTML, CSS</p>
+      </div>
+
+      <div class="project-card fade-up">
+        <h3>Library Heaven</h3>
+        <p>
+          Library Heaven is a book-selling website where users can browse and explore different books. The UI is simple, clean, and fully built using only HTML and CSS.
+        </p>
+        <p><strong>Tech Used:</strong> HTML, CSS</p>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>

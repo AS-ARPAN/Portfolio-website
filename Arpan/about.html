@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me - Arpan Sourav Panda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Arpan's Portfolio</div>
+    <nav>
+      <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h2>About Me</h2>
+    <div class="about-cards">
+      <div class="about-card slide-left">
+        <h3>Education</h3>
+        <p>
+          I am currently pursuing my B.Tech degree in Electronics and Telecommunication Engineering. My education has helped me build a strong foundation in technology and problem-solving.
+        </p>
+      </div>
+      <div class="about-card slide-right">
+        <h3>Interests</h3>
+        <p>
+          I enjoy playing sports like cricket and badminton. Music is my go-to for relaxation. I’m also deeply interested in web development and enjoy creating responsive websites.
+        </p>
+      </div>
+      <div class="about-card slide-left">
+        <h3>Passion</h3>
+        <p>
+          I’m passionate about building creative and useful digital experiences. I'm always looking to grow as a developer and explore new technologies.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

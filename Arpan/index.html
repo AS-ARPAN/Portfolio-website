@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arpan Sourav Panda - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-page">
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo">My Portfolio</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="hero">
+      <img src="profile.jpg" alt="Profile Photo" class="profile-photo" />
+      <h1>Hello, I'm Arpan Sourav Panda</h1>
+      <p class="introduction">
+        I'm a passionate web developer with a love for building
+        clean, responsive, and user-friendly websites. I enjoy turning complex problems
+        into simple, beautiful solutions. I'm currently learning advanced front-end
+        technologies and constantly improving my skills.
+      </p>
+      <div class="sphere-links">
+        <a href="about.html" class="sphere">About</a>
+        <a href="projects.html" class="sphere">Projects</a>
+        <a href="skills.html" class="sphere">Skills</a>
+      </div>
+    </div>
+  </main>
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-links">
+  
+      <a href="https://www.linkedin.com/in/arpan-sourav-b07730343" target="_blank" class="contact-icon">
+        <img src="icons/linkedin.png" alt="LinkedIn"> LinkedIn
+      </a>
+  
+      <a href="https://github.com/AS-ARPAN" target="_blank" class="contact-icon">
+        <img src="icons/github.png" alt="GitHub"> GitHub
+      </a>
+  
+      <a href="https://www.instagram.com/arpan_sourav" target="_blank" class="contact-icon">
+        <img src="icons/instagram.png" alt="Instagram"> Instagram
+      </a>
+  
+      <a href="mailto:arpansourav1917@gmail.com" class="contact-icon">
+        <img src="icons/email.png" alt="Email"> Email
+      </a>
+  
+    </div>
+  </section>
+  
+
+  <!-- Hamburger Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
