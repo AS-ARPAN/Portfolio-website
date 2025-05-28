@@ -10,12 +10,12 @@
 
   <header>
     <div class="logo">My Portfolio</div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <nav>
-      <ul id="navLinks">
+      <div class="hamburger">&#9776;</div>
+      <ul id="navLinks" class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="skills.html">Skills</a></li>
       </ul>
     </nav>
@@ -45,10 +45,11 @@
   </section>
 
   <script>
-    function toggleMenu() {
-      const nav = document.getElementById('navLinks');
-      nav.classList.toggle('show');
-    }
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
   </script>
 
 </body>
